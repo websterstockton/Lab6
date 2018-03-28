@@ -53,7 +53,7 @@ namespace MvcMovie.Migrations
 
                     b.Property<string>("Comment");
 
-                    b.Property<string>("MovieID");
+                    b.Property<int>("MovieID");
 
                     b.Property<string>("Reviewer");
 

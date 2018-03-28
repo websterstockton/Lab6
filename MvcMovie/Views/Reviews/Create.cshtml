@@ -19,14 +19,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="Comment" class="control-label"></label>
-                <textarea asp-for="Comment" class="form-control"></textarea>   
+                <textarea asp-for="Comment" class="form-control"></textarea>
                 <span asp-validation-for="Comment" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="MovieID" class="control-label"></label>
-                <input asp-for="MovieID" class="form-control" />
-                <span asp-validation-for="MovieID" class="text-danger"></span>
-            </div>
+            @*<div class="form-group">
+            <label asp-for="MovieID" class="control-label"></label>
+            <input asp-for="MovieID" class="form-control" />
+            <span asp-validation-for="MovieID" class="text-danger"></span>
+        </div>*@
+            @* Keep movie ID attached to the Review model *@
+            <input type="hidden" name="MovieID" id="MovieID" value="@Model.MovieID" />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
