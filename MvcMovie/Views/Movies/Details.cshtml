@@ -46,6 +46,7 @@
     <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+@* Pass movie ID to the Reviews controller so it knows which movie is being reviewed *@
 <div style="padding-top:20px">
-    <a class="btn btn-lg btn-info" href="/Reviews/Create">Write a review</a>
+    <a class="btn btn-lg btn-info" asp-controller="Reviews" asp-action="Create" asp-route-id="@Model.ID">Write a review</a>
 </div>

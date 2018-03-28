@@ -10,6 +10,6 @@ namespace MvcMovie.Models
         public int ID { get; set; }
         public string Reviewer { get; set; }
         public string Comment { get; set; }
-        public string MovieID { get; set; }
+        public int MovieID { get; set; } // changed from string
     }
 }
